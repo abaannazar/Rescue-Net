@@ -22,7 +22,7 @@ const AlertDetail = ({ alert }: AlertDetailProps) => {
   const getWeatherDetails = () => {
     // Mock weather data - in a real app, this would come from an API
     return {
-      temperature: "72°F",
+      temperature: "40°C",
       humidity: "85%",
       windSpeed: "45 mph",
       precipitation: "90%",
