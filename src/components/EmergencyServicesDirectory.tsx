@@ -16,27 +16,27 @@ const EmergencyServicesDirectory = () => {
   const services: EmergencyService[] = [
     {
       id: "1",
-      name: "Central Hospital",
+      name: "Yenepoya Medical College",
       type: "Hospital",
-      address: "123 Medical Center Dr",
-      phone: "555-0123",
+      address: "Deralkatte, Medical Center Dr",
+      phone: "0824 220 6000",
       status: "available",
       waitTime: "15 mins",
     },
     {
       id: "2",
-      name: "North Fire Station",
+      name: "Pandeshwar Fire Station",
       type: "Fire Station",
-      address: "456 Emergency Ave",
-      phone: "555-0124",
+      address: "Pandeshwar, Mangaluru, Karnataka 575001",
+      phone: "0824 242 3333",
       status: "busy",
     },
     {
       id: "3",
-      name: "Police HQ",
+      name: " Kadri Police Station",
       type: "Police",
-      address: "789 Safety Blvd",
-      phone: "555-0125",
+      address: "Bejai Main Rd, Bejai, Mangaluru, Karnataka 575004",
+      phone: "0824 222 0520",
       status: "available",
     },
   ];
@@ -91,7 +91,7 @@ const EmergencyServicesDirectory = () => {
               <div className="space-y-2">
                 <p className="text-sm text-muted-foreground">{service.address}</p>
                 <div className="flex justify-between items-center">
-                  <Button variant="outline" size="sm" className="gap-2">
+                  <Button variant="outline" size="sm" className="gap-2" onClick={() => window.location.href = `tel:${service.phone}`}>
                     <Phone className="h-4 w-4" />
                     {service.phone}
                   </Button>
